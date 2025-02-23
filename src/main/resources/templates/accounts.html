@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Accounts</title>
+</head>
+<body>
+<h1>All Accounts</h1>
+<table>
+    <tr>
+        <th>Account Number</th>
+        <th>Full Name</th>
+        <th>Balance</th>
+        <th>User</th>
+    </tr>
+    <tr th:each="account : ${accounts}">
+        <td th:text="${account.accountNumber}"></td>
+        <td th:text="${account.fullName}"></td>
+        <td th:text="${account.balance}"></td>
+    </tr>
+</table>
+<a href="/register">Create New Account</a>
+<a href="/">Back to Dashboard</a>
+</body>
+</html>

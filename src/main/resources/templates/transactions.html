@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lịch sử giao dịch</title>
+</head>
+<body>
+<h1>Lịch sử giao dịch</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Số tài khoản gửi</th>
+        <th>Loại giao dịch</th>
+        <th>Số tài khoản nhận</th>
+        <th>Số tiền</th>
+        <th>Thời gian</th>
+    </tr>
+    <tr th:each="transaction : ${transactions}">
+        <td th:text="${transaction.id}"></td>
+        <td th:text="${transaction.fromAccountNumber}"></td>
+        <td th:text="${transaction.type}"></td>
+        <td th:text="${transaction.toAccountNumber}"></td>
+        <td th:text="${transaction.amount}"></td>
+        <td th:text="${transaction.transaction_date}"></td>
+    </tr>
+</table>
+<a href="/">Back to dashboard</a>
+</body>
+</html>

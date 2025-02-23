@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chuyển tiền</title>
+</head>
+<body>
+<h1>Chuyển tiền</h1>
+<form action="/transfer" method="post">
+    <label>Số tài khoản gửi:</label>
+    <input type="text" name="fromAccount" required><br>
+    <label>Số tài khoản nhận:</label>
+    <input type="text" name="toAccount" required><br>
+    <label>Số tiền:</label>
+    <input type="number" name="amount" required><br>
+    <button type="submit">Chuyển tiền</button>
+</form>
+<a href="/">Back to dashboard</a>
+</body>
+</html>
